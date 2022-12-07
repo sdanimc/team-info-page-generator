@@ -1,14 +1,13 @@
 {
   "name": "team-info-page-generator",
   "version": "1.0.0",
-  "description": "generates html page with info on each team member",
+  "description": "creates a html page with team member info",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "jest --verbose test/*",
-    "start": "node index.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
