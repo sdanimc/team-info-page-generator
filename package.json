@@ -1,0 +1,23 @@
+{
+  "name": "team-info-page-generator",
+  "version": "1.0.0",
+  "description": "generates html page with info on each team member",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose test/*",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdanimc/team-info-page-generator.git"
+  },
+  "author": "S. D. McMillan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdanimc/team-info-page-generator/issues"
+  },
+  "homepage": "https://github.com/sdanimc/team-info-page-generator#readme"
+}
