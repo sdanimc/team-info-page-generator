@@ -4,6 +4,10 @@ const employee = require('./lib/employee');
 const engineer = require('./lib/engineer');
 const intern = require('./lib/intern');
 const manager = require('./lib/manager');
+const path = require('path');
+const DIST_DIR = path.resolve(__dirname, "dist");
+const distPath = path.join(DIST_DIR, "template.html");
+const render = require("./src/page-template.js");
 
 const teamMembers = [];
 const mgtQuestions = [
@@ -88,7 +92,7 @@ function addMemberQ() {
                 addIntern();
             } else {
                 console.log("done!");
-                //generateHTML?
+                
             }
         })
 };
@@ -134,4 +138,13 @@ function addIntern() {
             addMemberQ();
         })
 }
+function buildPage() {
+    if (!fs.existsSync(DIST_DIR)) {
+      fs.mkdirSync(DIST_DIR);
+    }
+    fs.writeFileSync(distPath, render(teamMembers), "utf-8");
+  }
+
+  
+
 init();
