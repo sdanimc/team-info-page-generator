@@ -88,7 +88,7 @@ function addMemberQ() {
                 addIntern();
             } else {
                 console.log("done!");
-                //generateHTML
+                //generateHTML?
             }
         })
 };
