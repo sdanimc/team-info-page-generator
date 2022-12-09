@@ -1,4 +1,4 @@
-const genHTML = require("../generateHTML");
-describe("genHTML", () => {
+const employee = require("../lib/employee");
+describe("employee", () => {
     
 })

@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 //const generateHTML = require('./generateHTML');
-const { inherits } = require('util');
+
 
 const mgtQuestions = [
     {
@@ -69,12 +69,7 @@ const internQs = [
         type: 'input'
     }
 ]
-//const addMemberQ = {
-//  name: 'continue',
-//message: 'Would you like to add a member to this team?',
-//type: 'list',
-//choices: ['Add Engineer', 'Add Intern', 'Team is Complete']
-//};
+
 function addMemberQ() {
     return inquirer.prompt([{
         name: 'continue',

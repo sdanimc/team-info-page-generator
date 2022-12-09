@@ -1,4 +1,4 @@
-const index = require("../index");
-describe ("index", () => {
+const manager = require("../lib/manager");
+describe ("manager", () => {
     
 })
