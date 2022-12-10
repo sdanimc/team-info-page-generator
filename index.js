@@ -143,7 +143,7 @@ function buildPage() {
       fs.mkdirSync(DIST_DIR);
     }
     fs.writeFileSync(distPath, render(teamMembers), "utf-8");
-    console.log("buid page ran");
+    console.log("Your web page has been built!");
   }
 
   
