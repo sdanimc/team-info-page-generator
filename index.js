@@ -92,7 +92,7 @@ function addMemberQ() {
                 addIntern();
             } else {
                 console.log("done!");
-                
+                buildPage();
             }
         })
 };
@@ -143,6 +143,7 @@ function buildPage() {
       fs.mkdirSync(DIST_DIR);
     }
     fs.writeFileSync(distPath, render(teamMembers), "utf-8");
+    console.log("buid page ran");
   }
 
   
